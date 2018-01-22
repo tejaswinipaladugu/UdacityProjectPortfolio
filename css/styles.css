@@ -1,0 +1,167 @@
+.foo {
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.tiles{
+  display: flex;
+  flex-direction: column;
+}
+
+.blue {
+  background: #02b3e4;
+}
+
+.black {
+  background: #2d3c49;
+}
+
+.grey {
+  background: #7d97ad;
+}
+
+.container{
+  width: 90%;
+  display: flex;
+  flex-flow: row;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.sidebar , .content{
+  /*position: fixed;*/
+  /*width: 50%;*/
+  padding: 3.125rem;
+  /*overflow-y: scroll;*/
+  float: right;
+  font-family: Hind, sans-serif;
+}
+
+
+h1, h3{
+  text-align: right;
+}
+
+.sidebar{
+  padding-top: 12em;
+  width: 10%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  width: 100%;
+}
+
+.logo{
+  width: 35%;
+  float: left;
+}
+
+.logo img{
+  width: 100px;
+  height: 100px;
+}
+
+.text{
+  width: 65%;
+  float: right;
+}
+
+.break {
+  width: 100%;
+}
+
+.favwebsites{
+  display: flex;
+  flex-direction: row;
+  width: 100%
+}
+
+.one, .three{
+  width: 33%;
+}
+
+
+.two {
+  width: 33%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.two img{
+  width: 90%
+}
+
+.website p {
+  line-height: 0.4;
+}
+
+.website img{
+  width: 100%;
+  height: 150px;
+  border-style: hidden;
+  border-radius: 1px;
+}
+
+
+.picture img{
+  padding-top: 1em;
+  width: 100%;
+}
+
+.websites{
+  font-size: 2rem;
+  color: #7d97ad;
+  align:left;
+}
+
+.subheader{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.link{
+  font-size: 1rem;
+  text-align: center;
+}
+
+/*@media screen and (max-width: 840px){
+  .sidebar, .content{
+    position: relative;
+    width:100%;
+  }*/
+
+@media screen and (max-width: 600px){
+  .sidebar,.logo img{display: none;}
+
+  p.link{padding-bottom: 1em;}
+
+  .one, .two, .three {width: 100%;}
+
+  .two{padding-left: 0; padding-right: 0;}
+
+  .text{float:left; width: 100%;}
+
+  .text h1, .text h3 { text-align: left;}
+
+  .favwebsites{display: flex; flex-direction: column; width: 80%; margin: auto;}
+
+  .picture img{position: relative;}
+
+  .sidebar, .content{position: relative; width:100%;}
+
+}
+
+@media screen and (min-width: 651px) and (max-width: 900px){
+  .sidebar{display: none;}
+}
